@@ -1,8 +1,12 @@
 body{
- background-color: Coral;
+ background-color: Ivory;
   color: Green;
+ font-family: Arial, helvetica, sans-serif;
+ font-size: 18px;
 }
 
 h1{
- color: red; 
+ color: blue;
+ font-size: 22px;
+ font-family: "Times New Roman", Times, serif;
 }
