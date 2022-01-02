@@ -4,7 +4,7 @@ function compute(r) {
     const Year = document.getElementById("noyears").value;
 
     if (Principal <= 0) {
-        document.getElementById("result").innerHTML = ""
+        document.getElementsByClassName("result")[0].style.display = "none";
         alert("Please enter positive value")
         document.getElementById("principal").focus()
         return
@@ -17,8 +17,12 @@ function compute(r) {
 
     var FutureDate = CurrentYear + parseInt(Year)
 
-    document.getElementById("result").innerHTML = "If you deposit " + Principal + ", at an interest rate of "
-        + IntRate + "%. You will receive an amount of " + Results + " in the year " + FutureDate + "."
+    document.getElementById("deposit").innerHTML = Principal
+    document.getElementById("rate2").innerHTML = IntRate + "%"
+    document.getElementById("intamount").innerHTML = Results
+    document.getElementById("future-year").innerHTML = FutureDate
+
+    document.getElementsByClassName("result")[0].style.display = "block";
 }
 
 const IntRate = document.getElementById("rate")

@@ -39,9 +39,18 @@ body{
    }
    
    .result{
-     display: block;
+     display: none;
      margin-left: 60px;
      margin-right: 60px;
+   }
+
+   .result p{
+       margin: 5px;
+   }
+
+   .result .result-value{
+       color: black;
+       background-color: yellow;
    }
    
    .footer{
