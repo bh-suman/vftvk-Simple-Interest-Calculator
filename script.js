@@ -4,8 +4,9 @@ function compute(r) {
     const Year = document.getElementById("noyears").value;
 
     if (Principal <= 0) {
-        alert("Please enter positive value")
         document.getElementById("result").innerHTML = ""
+        alert("Please enter positive value")
+        document.getElementById("principal").focus()
         return
     }
 
