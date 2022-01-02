@@ -1,12 +1,17 @@
+function emtpyPrincipal() {
+    document.getElementsByClassName("result")[0].style.display = "none";
+    alert("Please enter positive value")
+    document.getElementById("principal").focus()
+
+}
+
 function compute(r) {
     const Principal = document.getElementById("principal").value;
     const IntRate = document.getElementById("rate").value;
     const Year = document.getElementById("noyears").value;
 
     if (Principal <= 0) {
-        document.getElementsByClassName("result")[0].style.display = "none";
-        alert("Please enter positive value")
-        document.getElementById("principal").focus()
+        emtpyPrincipal()
         return
     }
 
@@ -31,5 +36,15 @@ IntRate.addEventListener(
     "input",
     (e) => {
         document.getElementById("dr").innerHTML = IntRate.value + "%";
+    }
+)
+document.getElementById("principal").addEventListener(
+    "change",
+    (e) => {
+        const Principal = document.getElementById("principal").value;
+        if (Principal <= 0) {
+            emtpyPrincipal()
+            return
+        }
     }
 )
