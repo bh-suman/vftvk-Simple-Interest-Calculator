@@ -1,12 +1,52 @@
 body{
- background-color: Ivory;
-  color: Green;
- font-family: Arial, helvetica, sans-serif;
- font-size: 18px;
-}
-
-h1{
- color: blue;
- font-size: 22px;
- font-family: "Times New Roman", Times, serif;
-}
+    background-color: Black;
+     color: Black;
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 18px;
+   }
+   
+   h1{
+     text-align: center;
+     color: Cadetblue;
+    font-size: 40px;
+    font-family: Arial;
+    margin-bottom: 40px;
+   }
+   
+   .cont{
+     width: 500px;
+     margin: auto;
+     background-color: Azure;
+     padding: 20px;
+     border-radius: 15px;
+   
+   }
+   
+   button{
+     font-size: 15px;
+     margin-left: 60px;
+     margin-bottom: 20px;
+   }
+   
+   .Field{
+     margin-bottom: 20px;
+   }
+   
+   label{
+     display: inline-block;
+     width: 200px;
+     padding-left: 60px;
+   }
+   
+   .result{
+     display: block;
+     margin-left: 60px;
+     margin-right: 60px;
+   }
+   
+   .footer{
+     padding-top: 20px;
+     align-content: flex-end;
+     text-align: left;
+   }
+   
