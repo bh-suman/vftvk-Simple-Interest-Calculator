@@ -3,6 +3,12 @@ function compute(r) {
     const IntRate = document.getElementById("rate").value;
     const Year = document.getElementById("noyears").value;
 
+    if (Principal <= 0) {
+        alert("Please enter positive value")
+        document.getElementById("result").innerHTML = ""
+        return
+    }
+
     var Results = Principal * IntRate * Year / 100
 
     const CurrentDate = new Date();
